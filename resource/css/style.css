@@ -1,0 +1,121 @@
+* {
+    font-family: "Montserrat", sans-serif;
+}
+
+html, body {
+    min-height: 100%;
+    min-width: 100%;
+}
+
+body {
+    background: linear-gradient(#0B0C10,#1F2833);
+    background-repeat: no-repeat;
+    background-attachment: scroll !important;
+    background-size: cover;
+    display: inline-block;
+}
+
+header {
+    height: 900px;
+    color: white; 
+}
+header #header-text {
+    /* padding: 300px 0; */
+    text-align: center; 
+}
+header #header-text h1 {
+    font-size: 4em;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-transform: uppercase; 
+}
+header #header-text h3 {
+    text-transform: uppercase; 
+}
+
+.navbar-brand {
+    padding-left: 20px;
+    color: #66FCF1 !important;
+}
+
+.navbar {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.navbar.scrolled {
+    padding: 10px 10px;
+    background-image: linear-gradient(to right, transparent, #45A29E);
+    margin: 15px;
+}
+.navbar.scrolled .navbar-nav .nav-link {
+    color: #fafafa !important;
+}
+.navbar.scrolled .navbar-nav .nav-link:hover {
+    color: #66FCF1 !important;
+}
+
+.nav-link {
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 0px 20px;
+    position: relative;
+}
+
+.nav-link:hover {
+    opacity: 1;
+    color: #45A29E !important;
+}
+
+.nav-link::before {
+    transition: 300ms;
+    height: 3px;
+    content: "";
+    left: 0%;
+    right: 0%;
+    position: absolute;
+    background: #45A29E;
+}
+
+.nav-link-ltr::before {
+    width: 0%;
+    bottom: 4px;
+}
+
+.nav-link-ltr:hover::before {
+    width: 100%;
+}
+
+.navbar-nav a {
+    text-decoration: none;
+    color: white !important;
+}
+
+.navbar-nav li.active a {
+    color: #66FCF1 !important;
+    border-bottom: 3px solid #66FCF1;
+    padding-bottom: 0;
+}
+
+/* .navbar {
+    padding: 60px 40px;
+    -webkit-transition: 500ms ease-in-out;
+    -moz-transition: 500ms ease-in-out;
+    -ms-transition: 500ms ease-in-out;
+    -o-transition: 500ms ease-in-out;
+    transition: 500ms ease-in-out; }
+    .navbar.scrolled {
+      padding: 30px 60px;
+      background: #fafafa; }
+    .navbar .navbar-nav .nav-item {
+      margin: 0 4px;
+      text-transform: uppercase;
+      font-weight: 400;
+      -webkit-transition: 500ms ease-in-out;
+      -moz-transition: 500ms ease-in-out;
+      -ms-transition: 500ms ease-in-out;
+      -o-transition: 500ms ease-in-out;
+      transition: 500ms ease-in-out; }
+      .navbar .navbar-nav .nav-item .nav-link.active, .navbar .navbar-nav .nav-item .nav-link:hover {
+        border-bottom: 4px solid #2a2a2a; } */

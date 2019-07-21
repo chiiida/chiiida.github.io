@@ -43,18 +43,6 @@ header #header-text h3 {
     padding-right: 20px;
 }
 
-.navbar.scrolled {
-    padding: 10px 10px;
-    background-image: linear-gradient(to right, transparent, #45A29E);
-    margin: 15px;
-}
-.navbar.scrolled .navbar-nav .nav-link {
-    color: #fafafa !important;
-}
-.navbar.scrolled .navbar-nav .nav-link:hover {
-    color: #66FCF1 !important;
-}
-
 .nav-link {
     font-size: 14px;
     text-transform: uppercase;
@@ -63,59 +51,62 @@ header #header-text h3 {
     position: relative;
 }
 
-.nav-link:hover {
-    opacity: 1;
-    color: #45A29E !important;
-}
-
-.nav-link::before {
-    transition: 300ms;
-    height: 3px;
-    content: "";
-    left: 0%;
-    right: 0%;
-    position: absolute;
-    background: #45A29E;
-}
-
-.nav-link-ltr::before {
-    width: 0%;
-    bottom: 4px;
-}
-
-.nav-link-ltr:hover::before {
-    width: 100%;
-}
-
 .navbar-nav a {
     text-decoration: none;
     color: white !important;
 }
 
-.navbar-nav li.active a {
+#topNavbar li a:before {
+    content: "";
+    position: absolute;
+    z-index: -2;
+    left: 0;
+    right: 100%;
+    bottom: 10%;
+    background: #45A29E;
+    height: 3px;
+    -webkit-transition-property: right;
+    transition-property: right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+#topNavbar li a:hover {
+    opacity: 1 !important;
+    color: #45A29E !important;
+}
+#topNavbar li a:hover:before {
+    right: 0;
+}
+#topNavbar li.active a:before {
+    left: 0;
+    right: 0;
+    bottom: 10%;
+    background: #66FCF1;
+}
+#topNavbar li.active a {
     color: #66FCF1 !important;
-    border-bottom: 3px solid #66FCF1;
-    padding-bottom: 0;
 }
 
-/* .navbar {
-    padding: 60px 40px;
-    -webkit-transition: 500ms ease-in-out;
-    -moz-transition: 500ms ease-in-out;
-    -ms-transition: 500ms ease-in-out;
-    -o-transition: 500ms ease-in-out;
-    transition: 500ms ease-in-out; }
-    .navbar.scrolled {
-      padding: 30px 60px;
-      background: #fafafa; }
-    .navbar .navbar-nav .nav-item {
-      margin: 0 4px;
-      text-transform: uppercase;
-      font-weight: 400;
-      -webkit-transition: 500ms ease-in-out;
-      -moz-transition: 500ms ease-in-out;
-      -ms-transition: 500ms ease-in-out;
-      -o-transition: 500ms ease-in-out;
-      transition: 500ms ease-in-out; }
-      .navbar .navbar-nav .nav-item .nav-link.active, .navbar .navbar-nav .nav-item .nav-link:hover {
-        border-bottom: 4px solid #2a2a2a; } */
+.navbar.scrolled {
+    padding: 10px 10px;
+    background-image: linear-gradient(to right, transparent, #66FCF1);
+    margin: 15px;
+}
+.navbar.scrolled #topNavbar li a {
+    color: #fafafa !important;
+}
+.navbar.scrolled #topNavbar li a:hover {
+    color: #1F2833 !important;
+}
+.navbar.scrolled #topNavbar li a:before {
+    background: #1F2833;
+}
+.navbar.scrolled #topNavbar li.active a {
+    color: #0B0C10 !important;
+}
+.navbar.scrolled #topNavbar li.active a:before {
+    background: #0B0C10;
+}
+

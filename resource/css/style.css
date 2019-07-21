@@ -39,8 +39,7 @@ header #header-text h3 {
 }
 
 .navbar {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 30px 30px;
 }
 
 .nav-link {
@@ -91,7 +90,7 @@ header #header-text h3 {
 
 .navbar.scrolled {
     padding: 10px 10px;
-    background-image: linear-gradient(to right, transparent, #66FCF1);
+    background-image: linear-gradient(to right, #66FCF1, #45A29E);
     margin: 15px;
 }
 .navbar.scrolled #topNavbar li a {
@@ -108,5 +107,8 @@ header #header-text h3 {
 }
 .navbar.scrolled #topNavbar li.active a:before {
     background: #0B0C10;
+}
+.navbar.scrolled .navbar-brand {
+    color: #0B0C10 !important;
 }
 

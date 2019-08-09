@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
         integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
 </head>
 
 <body>
@@ -28,7 +29,7 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" id="atme" href="#me">Me</a>
+                        <a class="nav-link" id="atme" href="#">Me</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" id="exp" href="#experiences">Experiences</a>
@@ -147,7 +148,7 @@
             <div class="row">
                 <div class="col-lg-8 mx-auto">
                     <h2 class="secTitle">Contact me</h2>
-                    <form class="contact-form" method="post" action="index.php" enctype="text/plain" spellcheck="true">
+                    <form class="contact-form" method="post" action="mailto:chida.fua@gmail.com" enctype="text/plain" spellcheck="true">
                         <div class="form-group">
                             <p>Name</p>
                             <input type="text" class="form-control" placeholder="Enter name" name="name">
@@ -165,12 +166,16 @@
                             <textarea class="form-control" rows="10" placeholder="Enter a message"
                                 name="message"></textarea>
                         </div>
-                        <input id="submit" name="submit" class="btn btn-primary" type="submit" value="Submit">
+                        <input id="submit" name="submit" class="btn btn-primary" type="submit" value="send">
                     </form>
                 </div>
             </div>
         </div>
     </section>
+    
+    <!-- <section> -->
+    <p class="text-secondary container content-container text-center text-md-right">Code with &hearts; by Chananchida Fuachai<br><small>Last updated: 3<sup>th</sup> Aug 2019</small></p>
+    <!-- </section> -->
 
     <!-- JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"

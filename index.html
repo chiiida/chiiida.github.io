@@ -19,12 +19,13 @@
 
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <nav class="navbar navbar-expand-md sidebarNavigation navbar-light fixed-top" id="mainNav" data-sidebarClass="navbar-inverse">
         <div class="container">
             <a class="navbar-brand" href="index.html">Chananchida F.</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" \
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="icon-bar"></span>
+            <button class="navbar-toggler hidden-lg-up float-xs-right" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
@@ -45,21 +46,27 @@
                     </li>
                 </ul>
             </div>
+            <!-- <div class="mr-4 mt-1 d-flex d-lg-none">
+                <span class="sc-bwzfXH jLfRgu">
+                    <span id="toggle" aria-hidden="true" class="fa fa-close fa-2x" style="color: #ffffff;">
+                    </span>
+                </span>
+            </div> -->
         </div>
     </nav>
 
     <header>
-        <h1 class="header-text">HEADER</h1>
+        <h1 id="header-text"></h1>
     </header>
 
     <section id="me" class="bg-light">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <h2 class="secTitle">me</h2>
-                    <p class="lead">This is a great place to talk about your webpage. This template is purposefully
-                        unstyled so you can use it as a boilerplate or starting point for you own landing page designs!
-                        This template features:</p>
+                <div class="col-lg-9 mx-auto">
+                    <h2 class="secTitle">About me</h2>
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt facere totam, quia
+                        hic quibusdam eum commodi repudiandae necessitatibus deleniti nemo quisquam temporibus
+                        repellendus provident fugit autem accusamus maxime sint alias?</p>
                     <ul>
                         <li>Clickable nav links that smooth scroll to page sections</li>
                         <li>Responsive behavior when clicking nav links perfect for a one page website</li>
@@ -75,7 +82,7 @@
     <section id="experiences" class="bg-light">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 mx-auto">
+                <div class="col-lg-9 mx-auto">
                     <h2 class="secTitle">experiences</h2>
                     <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore,
                         expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda
@@ -98,7 +105,7 @@
     <section id="achievements" class="bg-light">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 mx-auto">
+                <div class="col-lg-9 mx-auto">
                     <h2 class="secTitle">achievements</h2>
                     <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore,
                         expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda
@@ -124,7 +131,7 @@
     <section id="projects" class="bg-light">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 mx-auto">
+                <div class="col-lg-9 mx-auto">
                     <h2 class="secTitle">projects</h2>
                     <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat
                         voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et
@@ -146,9 +153,10 @@
     <section id="contact" class="bg-light">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 mx-auto">
+                <div class="col-lg-9 mx-auto">
                     <h2 class="secTitle">Contact me</h2>
-                    <form class="contact-form" method="post" action="mailto:chida.fua@gmail.com" enctype="text/plain" spellcheck="true">
+                    <form class="contact-form" method="post" action="mailto:chida.fua@gmail.com" enctype="text/plain"
+                        spellcheck="true">
                         <div class="form-group">
                             <p>Name</p>
                             <input type="text" class="form-control" placeholder="Enter name" name="name">
@@ -172,9 +180,11 @@
             </div>
         </div>
     </section>
-    
+
     <!-- <section> -->
-    <p class="text-secondary container content-container text-center text-md-right">Code with &hearts; by Chananchida Fuachai<br><small>Last updated: 3<sup>th</sup> Aug 2019</small></p>
+    <p class="text-secondary container content-container text-center text-md-right">Code with &hearts; by <a
+            href="http://github.com/llleyelll">Chananchida
+            Fuachai</a><br><small>Last updated: 3<sup>th</sup> Aug 2019</small></p>
     <!-- </section> -->
 
     <!-- JS -->

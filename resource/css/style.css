@@ -18,19 +18,25 @@ body {
 header {
     height: 500px;
     color: white; 
+    text-transform: uppercase; 
 }
-header .header-text {
+header #header-text {
     padding: 250px 0;
     text-align: center; 
 }
-header .header-text h1 {
+header #header-text h1 {
     font-size: 4em;
     font-weight: bold;
     letter-spacing: 5px;
-    text-transform: uppercase; 
 }
-header .header-text h3 {
-    text-transform: uppercase; 
+header span {
+    border-right: .05em solid;
+    animation: caret 1s steps(1) infinite;
+} 
+@keyframes caret {
+    50% {
+        border-color: transparent;
+    }
 }
 
 section {
@@ -41,6 +47,9 @@ section {
 .text-secondary {
     padding: 1rem;
     padding-top: 2rem;
+}
+.text-secondary a {
+    color: #45A29E;
 }
 
 #me {
@@ -125,6 +134,9 @@ section {
 .navbar.scrolled .navbar-brand {
     color: #0B0C10 !important;
 }
+.navbar .navbar-toggler-icon {
+    color: #66FCF1;
+}
 
 .btn.btn-primary {
     background: -webkit-linear-gradient(45deg, #45A29E 0%, #66FCF1 100%);
@@ -150,3 +162,9 @@ section {
 .secTitle {
     padding-bottom: 1rem;
 }
+
+.contact-form {
+    width: 80%;
+    margin: auto;
+}
+

@@ -49,11 +49,6 @@ $(document).on('click', 'a[href^="#"]', function(e) {
     $('body, html').animate({scrollTop: pos});
 });
 
-// $('#navbarResponsive .navbar-nav a').on('click', function() {
-//     document.querySelector( 'li.active' ).classList.remove( 'active' );
-//     $( this ).parent( 'li' ).addClass( 'active' );
-// })
-
 function addActive(ele){
     for (var i = 0; i < navEm.length; i++) {
         if (navEm[i].id != ele.id) {
@@ -63,3 +58,32 @@ function addActive(ele){
         }
     }
 }
+
+document.addEventListener('DOMContentLoaded',function(event){
+    var dataText = ["Hello World. <br />start developing"];
+    function typeWriter(text, i, fnCallback) {
+      if (i < (text.length)) {
+       document.getElementById('header-text').innerHTML = text.substring(0, i+1) +'<span aria-hidden="true"></span>';
+  
+        setTimeout(function() {
+          typeWriter(text, i + 1, fnCallback)
+        }, 100);
+      }
+      else if (typeof fnCallback == 'function') {
+        setTimeout(fnCallback, 700);
+      }
+    }
+     function StartTextAnimation(i) {
+       if (typeof dataText[i] == 'undefined'){
+          setTimeout(function() {
+            StartTextAnimation(0);
+          }, 20000);
+       }
+      if (i < dataText[i].length) {
+       typeWriter(dataText[i], 0, function(){
+         StartTextAnimation(i + 1);
+       });
+      }
+    }
+    StartTextAnimation(0);
+  });

@@ -21,7 +21,7 @@ header {
     text-transform: uppercase; 
 }
 header #header-text {
-    padding: 250px 0;
+    padding: 200px 0;
     text-align: center; 
 }
 header #header-text h1 {
@@ -166,5 +166,19 @@ section {
 .contact-form {
     width: 80%;
     margin: auto;
+}
+
+#mainProfile {
+    border-radius: 100%;
+    max-width: 100%;
+    max-height: auto;
+}
+
+#myposition {
+    padding: 0 0 1rem 0;
+}
+
+#me img{
+    padding-bottom: 1rem;
 }
 

@@ -10,16 +10,17 @@
     <title>Chananchida – resume</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="resource/css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
         integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <link rel="stylesheet" href="resource/css/style.css">
 </head>
 
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-md sidebarNavigation navbar-light fixed-top" id="mainNav" data-sidebarClass="navbar-inverse">
+    <nav class="navbar navbar-expand-md sidebarNavigation navbar-light fixed-top" id="mainNav"
+        data-sidebarClass="navbar-inverse">
         <div class="container">
             <a class="navbar-brand" href="index.html">Chananchida F.</a>
             <button class="navbar-toggler hidden-lg-up float-xs-right" type="button" data-toggle="collapse"
@@ -62,18 +63,21 @@
     <section id="me" class="bg-light">
         <div class="container">
             <div class="row">
-                <div class="col-lg-9 mx-auto">
+                <div class="col-lg-10 mx-auto">
                     <h2 class="secTitle">About me</h2>
-                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt facere totam, quia
-                        hic quibusdam eum commodi repudiandae necessitatibus deleniti nemo quisquam temporibus
-                        repellendus provident fugit autem accusamus maxime sint alias?</p>
-                    <ul>
-                        <li>Clickable nav links that smooth scroll to page sections</li>
-                        <li>Responsive behavior when clicking nav links perfect for a one page website</li>
-                        <li>Bootstrap's scrollspy feature which highlights which section of the page you're on in the
-                            navbar</li>
-                        <li>Minimal custom CSS so you are free to explore your own unique design options</li>
-                    </ul>
+                    <div class="row">
+                        <div class="col-sm col-lg-4 mx-auto">
+                            <img id="mainProfile" src="img/profile.jpg" alt="profile">
+                        </div>
+                        <div class="col-sm col-lg-7">
+                            <h3 id="myfullname">Chananchida Fuachai</h3>
+                            <h5 id="myposition" style="color: grey;">Software Developer</h5>
+                            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias repellat
+                                sapiente,
+                                voluptatem exercitationem aliquam vero maxime laboriosam facilis libero, obcaecati
+                                corrupti eveniet consequatur sequi doloremque tempore optio sed molestiae eius.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -82,7 +86,7 @@
     <section id="experiences" class="bg-light">
         <div class="container">
             <div class="row">
-                <div class="col-lg-9 mx-auto">
+                <div class="col-lg-10 mx-auto">
                     <h2 class="secTitle">experiences</h2>
                     <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore,
                         expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda
@@ -105,7 +109,7 @@
     <section id="achievements" class="bg-light">
         <div class="container">
             <div class="row">
-                <div class="col-lg-9 mx-auto">
+                <div class="col-lg-10 mx-auto">
                     <h2 class="secTitle">achievements</h2>
                     <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore,
                         expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda
@@ -131,7 +135,7 @@
     <section id="projects" class="bg-light">
         <div class="container">
             <div class="row">
-                <div class="col-lg-9 mx-auto">
+                <div class="col-lg-10 mx-auto">
                     <h2 class="secTitle">projects</h2>
                     <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat
                         voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et
@@ -153,8 +157,46 @@
     <section id="contact" class="bg-light">
         <div class="container">
             <div class="row">
-                <div class="col-lg-9 mx-auto">
+                <div class="col-lg-10 mx-auto">
                     <h2 class="secTitle">Contact me</h2>
+                    <!-- <ul class="contact-form">
+                        <li>
+                            <label class="itemName">Name</label>
+                            <div class="fill"><input type="text" placeholder="Enter name" name="Contact[name]"
+                                    class="required" value=""></div>
+                            <div class="wrongMSG">Required !</div>
+                        </li>
+                        <li>
+                            <label class="itemName">Subject</label>
+                            <div class="fill"><input type="text" placeholder="Enter subject" name="Contact[email]"
+                                    class="required" value=""></div>
+                            <div class="wrongMSG">Required !</div>
+                        </li>
+                        <li>
+                            <label class="itemName">Email</label>
+                            <div class="fill"><input type="text" placeholder="Enter email" name="Contact[email]"
+                                    class="required" value=""></div>
+                            <div class="wrongMSG">Required !</div>
+                        </li>
+                        <li>
+                            <label class="itemName">Message</label>
+                            <div class="fill"><textarea placeholder="Enter your message" name="Contact[message]"
+                                    class="required" spellcheck="false"
+                                    style="margin: 0px; height: 195px; width: 327px;"></textarea></div>
+                            <div class="wrongMSG">Required !</div>
+                        </li>
+                        <li>
+                            <label class="itemName">Security Code</label>
+                            <div class="fill_code">
+                                <input type="text" name="captcha" placeholder="Enter Security code" class="required">
+                                <div class="wrongMSG">Required !</div>
+                                <span>
+                                    <a href="javascript:;" id="changeCap"><img src="captcha/forBranch/default?aKyAAQKm"
+                                            alt="captcha"></a>
+                                </span>
+                            </div>
+                        </li>
+                    </ul> -->
                     <form class="contact-form" method="post" action="mailto:chida.fua@gmail.com" enctype="text/plain"
                         spellcheck="true">
                         <div class="form-group">
@@ -182,7 +224,7 @@
     </section>
 
     <!-- <section> -->
-    <p class="text-secondary container content-container text-center text-md-right">Code with &hearts; by <a
+    <p class="text-secondary container content-container text-center">Code with &hearts; by <a
             href="http://github.com/llleyelll">Chananchida
             Fuachai</a><br><small>Last updated: 3<sup>th</sup> Aug 2019</small></p>
     <!-- </section> -->

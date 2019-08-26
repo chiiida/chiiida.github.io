@@ -34,8 +34,6 @@ function navChange() {
     } else if (scrollPos < cont.offsetTop) {
         addActive(navEm[4]);
     }
-    console.log('1:'+scrollPos, proj.offsetTop)
-    console.log('2:'+scrollPos, cont.offsetTop)
 }
 
 // Scrolling Nav
@@ -60,7 +58,7 @@ function addActive(ele){
 }
 
 document.addEventListener('DOMContentLoaded',function(event){
-    var dataText = ["Hello World. <br />start developing"];
+    var dataText = ["Chananchida F. <br /><br />start developing"];
     function typeWriter(text, i, fnCallback) {
       if (i < (text.length)) {
        document.getElementById('header-text').innerHTML = text.substring(0, i+1) +'<span aria-hidden="true"></span>';

@@ -16,12 +16,12 @@ body {
 }
 
 header {
-    height: 500px;
+    height: 350px;
     color: white; 
     text-transform: uppercase; 
 }
 header #header-text {
-    padding: 200px 0;
+    padding: 150px 0;
     text-align: center; 
 }
 header #header-text h1 {
@@ -42,6 +42,10 @@ header span {
 section {
     /* padding-top: 100px; */
     padding-bottom: 100px;
+    color: #fafafa;
+}
+hr {
+    background-color: rgb(61, 61, 61);
 }
 
 .text-secondary {
@@ -53,7 +57,7 @@ section {
 }
 
 #me {
-    padding-top: 100px;
+    padding-top: 50px;
 }
 
 .navbar-brand {
@@ -160,7 +164,18 @@ section {
 }
 
 .secTitle {
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
+    color: #45A29E;
+    text-transform: uppercase;
+}
+
+.secTitleline {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+.subTitle {
+    padding-top: 1rem;
 }
 
 .contact-form {
@@ -180,5 +195,53 @@ section {
 
 #me img{
     padding-bottom: 1rem;
+}
+
+.separator {
+  margin-top: 25px;
+  margin-bottom: 80px;
+  border: 0;
+}
+
+.separator--line {
+  border: 0;
+  border-bottom: 1px solid white;
+  width: 0;
+  -webkit-animation: separator-width 2s ease-out forwards;
+          animation: separator-width 2s ease-out forwards;
+}
+
+@-webkit-keyframes separator-width {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes separator-width {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 90%;
+  }
+}
+
+.resize {
+    max-width: 70%;
+    max-height: auto;
+}
+
+.item-list {
+    padding-top: 2rem;
+}
+.item-list h5{
+    color: gray;
+    font-style: italic;
+}
+.item-list li {
+    font-size: larger;
 }
 

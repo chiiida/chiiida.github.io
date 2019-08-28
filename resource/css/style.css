@@ -245,3 +245,8 @@ hr {
     font-size: larger;
 }
 
+.svglogo {
+    max-width: 10%;
+    height: auto;
+}
+

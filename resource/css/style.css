@@ -459,6 +459,7 @@ hr {
 .proj > h4 {
     display: inline-block;
 }
+
 .proj-date {
     font-size: 80%;
     color: #45A29E;
@@ -479,6 +480,12 @@ hr {
 .projdes {
     text-indent: 50px;
     padding-top: 10px;
+}
+.projdes a {
+    color: #66FCF1;
+}
+.projdes a:hover {
+    color: #45A29E;
 }
 
 .projline {

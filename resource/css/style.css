@@ -16,12 +16,12 @@ body {
 }
 
 header {
-    height: 350px;
+    height: 80vh;
     color: white; 
     text-transform: uppercase; 
 }
 header #header-text {
-    padding: 150px 0;
+    padding: 35vh 0;
     text-align: center; 
 }
 header #header-text h1 {
@@ -248,5 +248,42 @@ hr {
 .svglogo {
     max-width: 10%;
     height: auto;
+}
+
+.godown {
+    background-color: #45A29E;
+    text-indent: -2000em;
+    border-radius: 100px;
+    display: block;
+    position: absolute;
+    z-index: 100;
+    bottom: 60px;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    margin-left: -25px;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+.godown a {
+    background-color: #45A29E;
+    text-decoration: none;
+    outline: none;
+}
+
+.logosize {
+    font-size: 200%;
+}
+
+.subtitle {
+    padding-top: 5%;
+    text-transform: uppercase;
+    text-align: center;
+    /* background: linear-gradient(to right, #66FCF1 0%, #330867 100%);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    font-weight: 550;
 }
 

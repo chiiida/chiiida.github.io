@@ -48,7 +48,7 @@ $(document).on('click', 'a[href^="#"]', function(e) {
         return;
     }
     var pos = $id.offset().top - 100;
-    $('body, html').animate({scrollTop: pos});
+    $('body, html').animate({scrollTop: pos}, 1500);
 });
 
 function addActive(ele){

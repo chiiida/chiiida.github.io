@@ -1,5 +1,8 @@
 $(document).ready(function(){
   $(this).scrollTop(0);
+  $('.toggle').click(function(){
+    $('.toggle').toggleClass('active')
+  })
 });
 
 window.onscroll = () => { navChange() };
@@ -61,6 +64,7 @@ function addActive(ele){
     }
 }
 
+// Typing text
 document.addEventListener('DOMContentLoaded',function(event){
     var dataText = ["Chananchida F. <br /><br />start developing"];
     function typeWriter(text, i, fnCallback) {

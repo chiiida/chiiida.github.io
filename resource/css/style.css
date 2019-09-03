@@ -164,7 +164,6 @@ hr {
     height: 30px;
     border-radius: 100%;
     background: transparent;
-    cursor: pointer;
 }
 .toggle:before {
     content: '+';

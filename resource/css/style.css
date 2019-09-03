@@ -46,7 +46,12 @@ header span {
     .navbar {
         background: #0B0C10;
     }
+
+    .navbar.scrolled #navbarResponsive li a {
+        color: rgb(89, 94, 100) !important;
+    }
 }
+
 
 section {
     /* padding-top: 100px; */
@@ -130,7 +135,7 @@ hr {
     margin: 15px;
 }
 .navbar.scrolled #navbarResponsive li a {
-    color: rgb(89, 94, 100) !important;
+    color: #fff !important;
 }
 .navbar.scrolled #navbarResponsive li a:hover {
     color: #1F2833 !important;

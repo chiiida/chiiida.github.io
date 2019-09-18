@@ -96,8 +96,6 @@ document.addEventListener('DOMContentLoaded',function(event){
 
 
 
-// - Noel Delgado | @pixelia_me
-
 const nodes = [].slice.call(document.querySelectorAll('li'), 0);
 const directions  = { 0: 'top', 1: 'right', 2: 'bottom', 3: 'left' };
 const classNames = ['in', 'out'].map((p) => Object.values(directions).map((d) => `${p}-${d}`)).reduce((a, b) => a.concat(b));

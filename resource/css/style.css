@@ -131,6 +131,7 @@ hr {
 
 .navbar.scrolled {
     padding: 10px 10px;
+    max-width: 95%;
     background-image: linear-gradient(to right, #66FCF1, #45A29E);
     margin: 15px;
 }
@@ -236,6 +237,11 @@ hr {
     border-radius: 100%;
     max-width: 100%;
     max-height: auto;
+}
+@media (max-width: 575px) {
+    #mainProfile {
+        max-width: 90%;
+    }
 }
 
 #myposition {

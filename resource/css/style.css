@@ -294,7 +294,8 @@ hr {
     padding-top: 2rem;
 }
 .item-list h5{
-    color: gray;
+    color: #45A29E;
+    font-weight: lighter;
     font-style: italic;
 }
 .item-list li {

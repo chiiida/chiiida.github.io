@@ -1,3 +1,10 @@
+:root {
+    --black: #0B0C10;
+    --dark-navy: #1F2833;
+    --blue-navy: #45A29E;
+    --light-blue: #66FCF1;
+}
+
 * {
     font-family: "Montserrat", sans-serif;
 }
@@ -8,11 +15,15 @@ html, body {
 }
 
 body {
-    background: linear-gradient(#0B0C10,#1F2833);
+    background: linear-gradient(var(--black),var(--dark-navy));
     background-repeat: no-repeat;
     background-attachment: scroll !important;
     background-size: cover;
     display: inline-block;
+}
+
+a {
+    color: var(--light-blue);
 }
 
 header {
@@ -44,7 +55,7 @@ header span {
     }
 
     .navbar {
-        background: #0B0C10;
+        background: var(--black);
     }
 
     .navbar.scrolled #navbarResponsive li a {
@@ -52,11 +63,9 @@ header span {
     }
 }
 
-
 section {
-    /* padding-top: 100px; */
     padding-bottom: 100px;
-    color: #fafafa;
+    color: white;
 }
 hr {
     background-color: rgb(61, 61, 61);
@@ -67,7 +76,7 @@ hr {
     padding-top: 2rem;
 }
 .text-secondary a {
-    color: #45A29E;
+    color: var(--blue-navy) ;
 }
 
 #me {
@@ -76,7 +85,7 @@ hr {
 
 .navbar-brand {
     padding-left: 20px;
-    color: #66FCF1 !important;
+    color: var(--light-blue)  !important;
 }
 
 .navbar {
@@ -103,7 +112,7 @@ hr {
     left: 0;
     right: 100%;
     bottom: 10%;
-    background: #45A29E;
+    background: var(--blue-navy) ;
     height: 3px;
     -webkit-transition-property: right;
     transition-property: right;
@@ -114,7 +123,7 @@ hr {
 }
 #navbarResponsive li a:hover {
     opacity: 1 !important;
-    color: #45A29E !important;
+    color: var(--blue-navy)  !important;
 }
 #navbarResponsive li a:hover:before {
     right: 0;
@@ -123,38 +132,38 @@ hr {
     left: 0;
     right: 0;
     bottom: 10%;
-    background: #66FCF1;
+    background: var(--light-blue) ;
 }
 #navbarResponsive li.active a {
-    color: #66FCF1 !important;
+    color: var(--light-blue)  !important;
 }
 
 .navbar.scrolled {
     padding: 10px 10px;
     max-width: 95%;
-    background-image: linear-gradient(to right, #66FCF1, #45A29E);
+    background-image: linear-gradient(to right, var(--light-blue) , var(--blue-navy) );
     margin: 15px;
 }
 .navbar.scrolled #navbarResponsive li a {
     color: #fff !important;
 }
 .navbar.scrolled #navbarResponsive li a:hover {
-    color: #1F2833 !important;
+    color: var(--dark-navy) !important;
 }
 .navbar.scrolled #navbarResponsive li a:before {
-    background: #1F2833;
+    background: var(--dark-navy);
 }
 .navbar.scrolled #navbarResponsive li.active a {
-    color: #0B0C10 !important;
+    color: var(--black) !important;
 }
 .navbar.scrolled #navbarResponsive li.active a:before {
-    background: #0B0C10;
+    background: var(--black);
 }
 .navbar.scrolled .navbar-brand {
-    color: #0B0C10 !important;
+    color: var(--black) !important;
 }
 .navbar .navbar-toggler-icon {
-    color: #66FCF1;
+    color: var(--light-blue) ;
 }
 
 .toggle {
@@ -175,7 +184,7 @@ hr {
     font-size: 40px;
     width: 100%;
     height: 100%;
-    color: #66FCF1;
+    color: var(--light-blue) ;
     font-weight: 100;
     text-align: center;
     transition: 1s;
@@ -188,14 +197,14 @@ hr {
     background: transparent;
 }
 .navbar.scrolled .toggle::before {
-    color: #0B0C10;
+    color: var(--black);
 }
 
 .btn.btn-primary {
-    background: -webkit-linear-gradient(45deg, #45A29E 0%, #66FCF1 100%);
-    background: -moz-linear-gradient(45deg, #45A29E 0%, #66FCF1 100%);
-    background: -o-linear-gradient(45deg, #45A29E 0%, #66FCF1 100%);
-    background: linear-gradient(45deg, #45A29E 0%, #66FCF1 100%);
+    background: -webkit-linear-gradient(45deg, var(--blue-navy)  0%, var(--light-blue)  100%);
+    background: -moz-linear-gradient(45deg, var(--blue-navy)  0%, var(--light-blue)  100%);
+    background: -o-linear-gradient(45deg, var(--blue-navy)  0%, var(--light-blue)  100%);
+    background: linear-gradient(45deg, var(--blue-navy)  0%, var(--light-blue)  100%);
     color: #fff;
     text-transform: uppercase;
     cursor: pointer;
@@ -215,7 +224,7 @@ hr {
 
 .secTitle {
     padding-bottom: 2rem;
-    color: #45A29E;
+    color: var(--blue-navy) ;
     text-transform: uppercase;
 }
 
@@ -290,11 +299,25 @@ hr {
     padding-bottom: 10%;
 }
 
+.agoda-resize {
+    max-width: 70%;
+    max-height: auto;
+    margin-top: 20%;
+}
+
+.white-logo-bg {
+    width: 210px;
+    min-height: 210px;
+    background-color: white;
+    margin-bottom: 10%;
+    box-sizing: border-box;
+}
+
 .item-list {
     padding-top: 2rem;
 }
 .item-list h5{
-    color: #45A29E;
+    color: var(--blue-navy) ;
     font-weight: lighter;
     font-style: italic;
 }
@@ -303,7 +326,7 @@ hr {
 }
 
 .godown {
-    background-color: #45A29E;
+    background-color: var(--blue-navy) ;
     text-indent: -2000em;
     border-radius: 100px;
     display: block;
@@ -320,7 +343,7 @@ hr {
     transition: all 0.4s ease-in-out;
 }
 .godown a {
-    background-color: #45A29E;
+    background-color: var(--blue-navy) ;
     text-decoration: none;
     outline: none;
 }
@@ -333,7 +356,7 @@ hr {
     padding-top: 5%;
     text-transform: uppercase;
     text-align: center;
-    /* background: linear-gradient(to right, #66FCF1 0%, #330867 100%);
+    /* background: linear-gradient(to right, var(--light-blue)  0%, #330867 100%);
 	-webkit-background-clip: text;
     -webkit-text-fill-color: transparent; */
     font-weight: 550;
@@ -356,10 +379,10 @@ hr {
     height: 55px;
     border-radius: 40px;
     /* margin: 0 5% 0 5%; */
-    background: -webkit-linear-gradient(45deg, #45A29E 0%, #66FCF1 100%);
-    background: -moz-linear-gradient(45deg, #45A29E 0%, #66FCF1 100%);
-    background: -o-linear-gradient(45deg, #45A29E 0%, #66FCF1 100%);
-    background: linear-gradient(45deg, #45A29E 0%, #1F2833 100%);
+    background: -webkit-linear-gradient(45deg, var(--blue-navy)  0%, var(--light-blue)  100%);
+    background: -moz-linear-gradient(45deg, var(--blue-navy)  0%, var(--light-blue)  100%);
+    background: -o-linear-gradient(45deg, var(--blue-navy)  0%, var(--light-blue)  100%);
+    background: linear-gradient(45deg, var(--blue-navy)  0%, var(--dark-navy) 100%);
     transform: 1s box-shadow;
 }
 
@@ -517,15 +540,19 @@ hr {
 
 .proj-date {
     font-size: 80%;
-    color: #45A29E;
+    color: var(--blue-navy) ;
     font-style: italic;
     font-weight: lighter;
 }
 
 .hashtag {
     display: inline-block;
-    color: #66FCF1;
+    color: var(--light-blue) ;
     padding-right: 0.2%;
+}
+
+.white-hashtag {
+    color: white;
 }
 
 .tapp {
@@ -537,10 +564,10 @@ hr {
     padding-top: 10px;
 }
 .projdes a {
-    color: #66FCF1;
+    color: var(--light-blue) ;
 }
 .projdes a:hover {
-    color: #45A29E;
+    color: var(--blue-navy) ;
 }
 
 .projline {

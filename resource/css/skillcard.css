@@ -1,0 +1,70 @@
+:root {
+  --black: #0b0c10;
+  --dark-navy: #1f2833;
+  --blue-navy: #45a29e;
+  --light-blue: #66fcf1;
+}
+
+.card-container {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 0 0;
+  text-align: center;
+}
+
+.card {
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: 10% 0;
+  min-width: 150px;
+  min-height: 150px;
+  border-radius: 5px;
+}
+
+.card {
+  background: white;
+  align-items: center;
+  justify-content: center;
+  font-size: 10%;
+}
+
+.card h5 {
+  margin-top: 5%;
+  margin-bottom: 2%;
+  color: var(--black);
+  font-style: normal;
+}
+
+.card h6 {
+  color: var(--blue-navy);
+  font-weight: 300;
+  margin-bottom: 0;
+}
+
+.skill-svglogo {
+  max-width: 50%;
+  height: auto;
+}
+
+.skill-fontcard {
+  font-size: 74px;
+}
+
+.skill-row {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  margin: 2% 0;
+}
+
+.skills {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.firebase {
+  max-width: 90px;
+  max-height: 90px;
+  margin-bottom: -16px;
+}

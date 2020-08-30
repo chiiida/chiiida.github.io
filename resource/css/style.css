@@ -356,9 +356,6 @@ hr {
     padding-top: 5%;
     text-transform: uppercase;
     text-align: center;
-    /* background: linear-gradient(to right, var(--light-blue)  0%, #330867 100%);
-	-webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
     font-weight: 550;
 }
 
@@ -504,13 +501,13 @@ hr {
 
 .svglogo {
     padding-right: 5%;
-    max-width: 25%;
+    max-width: 20%;
     height: auto;
 }
 
 .svglogo-1 {
     padding-right: 2%;
-    max-width: 30%;
+    max-width: 25%;
     height: auto;
 }
 

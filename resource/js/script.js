@@ -29,8 +29,6 @@ function navChange() {
 
   var scrollPos = $(document).scrollTop();
   scrollPos = scrollPos + 101;
-  console.log(scrollPos);
-  console.log("pos: " + me.offsetTop);
   if (scrollPos >= me.offsetTop && scrollPos < exp.offsetTop) {
     addActive(navEm[0]);
   } else if (scrollPos >= exp.offsetTop && scrollPos < proj.offsetTop) {
@@ -108,17 +106,4 @@ const getDirectionKey = (ev, node) => {
   return Math.round(Math.atan2(y, x) / 1.57079633 + 5) % 4;
 }
 
-class Item {
-  constructor(element) {
-    this.element = element;
-    this.element.addEventListener('mouseover', (ev) => this.update(ev, 'in'));
-    this.element.addEventListener('mouseout', (ev) => this.update(ev, 'out'));
-  }
-
-  update(ev, prefix) {
-    this.element.classList.remove(...classNames);
-    this.element.classList.add(`${prefix}-${directions[getDirectionKey(ev, this.element)]}`);
-  }
-}
-
-nodes.forEach(node => new Item(node));
+AOS.init();

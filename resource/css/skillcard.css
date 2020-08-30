@@ -68,3 +68,14 @@
   max-height: 90px;
   margin-bottom: -16px;
 }
+
+@media (max-width: 575px) {
+  .skill-row {
+    display: inline;
+    margin: 0 0;
+  }
+
+  .card {
+    margin: 1% 3%;
+  }
+}

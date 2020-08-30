@@ -551,6 +551,11 @@ hr {
 .white-hashtag {
     color: white;
 }
+@media (max-width: 575px) {
+    .white-hashtag {
+      margin: 0;
+    }
+  }
 
 .tapp {
     padding-right: 0.5%;

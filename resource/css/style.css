@@ -255,6 +255,9 @@ hr {
 
 #myposition {
     padding: 0 0 1rem 0;
+    color: var(--blue-navy);
+    font-size: medium;
+    font-style: italic;
 }
 
 #me img{

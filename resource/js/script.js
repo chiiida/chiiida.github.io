@@ -76,16 +76,22 @@ document.addEventListener('DOMContentLoaded', function (event) {
       setTimeout(fnCallback, 700);
     }
   }
+  
   function StartTextAnimation(i) {
     if (typeof dataText[i] == 'undefined') {
       setTimeout(function () {
         StartTextAnimation(0);
       }, 20000);
     }
-    if (i < dataText[i].length) {
-      typeWriter(dataText[i], 0, function () {
-        StartTextAnimation(i + 1);
-      });
+
+    try {
+      if (i < dataText[i].length) {
+        typeWriter(dataText[i], 0, function () {
+          StartTextAnimation(i + 1);
+        });
+      }
+    } catch(err) {
+      return;
     }
   }
   StartTextAnimation(0);

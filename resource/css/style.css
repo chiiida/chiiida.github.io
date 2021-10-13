@@ -584,3 +584,14 @@ hr {
 .projimg {
     text-align: center;
 }
+
+.whattocook-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.whattocook-img > img {
+    max-width: 30%;
+    margin: 0 -1%;
+}

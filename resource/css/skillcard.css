@@ -20,13 +20,14 @@
   min-width: 150px;
   min-height: 150px;
   border-radius: 5px;
-}
-
-.card {
   background: white;
   align-items: center;
   justify-content: center;
   font-size: 10%;
+}
+
+.empty-card {
+  background-color: transparent;
 }
 
 .card h5 {
@@ -58,6 +59,11 @@
   margin: 2% 0;
 }
 
+.skill-last-row {
+  display: flex;
+  margin: 2% 30%;
+}
+
 .skills {
   width: 90%;
   margin: 0 auto;
@@ -69,8 +75,18 @@
   margin-bottom: -16px;
 }
 
+.rxswift {
+  max-width: 52%;
+  margin-bottom: -16px;
+}
+
 @media (max-width: 575px) {
   .skill-row {
+    display: inline;
+    margin: 0 0;
+  }
+
+  .skill-last-row {
     display: inline;
     margin: 0 0;
   }

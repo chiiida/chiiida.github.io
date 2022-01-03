@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/llleyelll/llleyelll.github.io.git"
+    "url": "git+https://github.com/chiiida/chiiida.github.io.git"
   },
   "author": "Chananchida Fuachai",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/llleyelll/llleyelll.github.io/issues"
+    "url": "https://github.com/chiiida/chiiida.github.io/issues"
   },
-  "homepage": "https://github.com/llleyelll/llleyelll.github.io#readme"
+  "homepage": "https://github.com/chiiida/chiiida.github.io#readme"
 }

@@ -4,4 +4,4 @@
 This is Chananchida's profolio and resume website.
 
 ## Author
- -  [Chananchida Fuachai](github.io/llleyelll)
+ -  [Chananchida Fuachai](github.io/chiiida)
